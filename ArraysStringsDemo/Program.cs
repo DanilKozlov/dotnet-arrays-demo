@@ -36,9 +36,27 @@ namespace ArraysStringsDemo
                 Console.WriteLine();
             }
 
+            //My Code
 
+            int[][] tDarray1 = new int[9][];
+
+            for(int i =0; i < tDarray1.Length; i++)
+            {
+                tDarray1[i] = new int[tDarray1.Length];
+            }
+
+            for (int i = 0; i < tDarray1.Length; i++)
+            {
+                for (int j = 0; j < tDarray1[i].Length; j++)
+                {
+                    tDarray1[i][j] = (i + 1) * (j + 1);
+
+                    Console.Write((j+1) + " * " + (i+1) +" = "+ tDarray1[i][j]+"\t");
+                }
+                Console.WriteLine();
+            }
 
             // String s1 = new String("Hello");
-        }
+            }
     }
 }
